@@ -65,22 +65,13 @@ namespace WebApplication10
                     AlwaysIncludeUserClaimsInIdToken = true,
                     RequireConsent = false,
                     RedirectUris = {
-                        "https://localhost:44320/signin-oidc"
+                        "https://localhost:5002/signin-oidc"
 
                     },
                     PostLogoutRedirectUris = {
-                        "https://localhost:44320/signout-callback-oidc"
+                        "https://localhost:5002/signout-callback-oidc"
 
                     },
-
-                    //RedirectUris = {
-                    //    "http://localhost:5000/signin-oidc"
-
-                    //},
-                    //PostLogoutRedirectUris = {
-                    //    "http://localhost:5000/signout-callback-oidc"
-
-                    //},
                     AllowedScopes = new List<string>
                     {
                         IdentityServerConstants.StandardScopes.OpenId,

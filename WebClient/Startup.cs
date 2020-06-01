@@ -37,8 +37,7 @@ namespace WebClient
             .AddOpenIdConnect(options =>
             {
                 options.SignInScheme = "Cookies";
-                options.Authority = "https://localhost:44318";
-                //options.Authority = "http://localhost:5000";
+                options.Authority = "https://localhost:5001";
                 options.RequireHttpsMetadata = false;
                 options.ClientId = "razor";
                 options.ClientSecret = "secret";
@@ -48,7 +47,6 @@ namespace WebClient
                 //options.Scope.Add("role");
                 //options.Scope.Add("offline_access");
                 options.SaveTokens = true;
-
 
             });
 
