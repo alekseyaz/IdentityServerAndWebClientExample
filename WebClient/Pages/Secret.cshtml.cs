@@ -4,9 +4,9 @@ using System.Linq;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
-using WebClient.Models;
+using Zaac.WebClient.Models;
 
-namespace WebClient.Pages
+namespace Zaac.WebClient.Pages
 {
     [Authorize]
     public class SecretModel : PageModel

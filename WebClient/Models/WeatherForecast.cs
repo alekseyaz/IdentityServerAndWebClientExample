@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace WebClient.Models
+namespace Zaac.WebClient.Models
 {
     public class WeatherForecast
     {

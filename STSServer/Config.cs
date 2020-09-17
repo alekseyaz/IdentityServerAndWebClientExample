@@ -6,7 +6,7 @@ using IdentityServer4.Models;
 using Microsoft.Extensions.Configuration;
 using System.Collections.Generic;
 
-namespace WebApplication10
+namespace Zaac.STSServer
 {
     public class Config
     {
@@ -16,7 +16,7 @@ namespace WebApplication10
             {
                 new IdentityResources.OpenId(),
                 new IdentityResources.Profile(),
-                new IdentityResources.Email()
+                //new IdentityResources.Email()
             };
         }
 
@@ -53,16 +53,16 @@ namespace WebApplication10
             {
                 new Client
                 {
-                    ClientName = "codeflowpkceclient",
+                    //ClientName = "codeflowpkceclient",
                     ClientId = "razor",
                     ClientSecrets = {new Secret("secret".Sha256()) },
                     AllowedGrantTypes = GrantTypes.Code,
                     RequirePkce = true,
-                    RequireClientSecret = true,
-                    AllowOfflineAccess = true,
-                    AlwaysSendClientClaims = true,
-                    UpdateAccessTokenClaimsOnRefresh = true,
-                    AlwaysIncludeUserClaimsInIdToken = true,
+                    //RequireClientSecret = true,
+                    //AllowOfflineAccess = true,
+                    //AlwaysSendClientClaims = true,
+                    //UpdateAccessTokenClaimsOnRefresh = true,
+                    //AlwaysIncludeUserClaimsInIdToken = true,
                     RequireConsent = false,
                     RedirectUris = {
                         "https://localhost:5002/signin-oidc"
@@ -76,8 +76,8 @@ namespace WebApplication10
                     {
                         IdentityServerConstants.StandardScopes.OpenId,
                         IdentityServerConstants.StandardScopes.Profile,
-                        IdentityServerConstants.StandardScopes.OfflineAccess,
-                        "role"
+                        //IdentityServerConstants.StandardScopes.OfflineAccess,
+                        //"role"
                     }
                 }
             };

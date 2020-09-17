@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace IdentityServer.Migrations
+namespace Zaac.STSServer.Migrations
 {
     public partial class InitialMigration : Migration
     {

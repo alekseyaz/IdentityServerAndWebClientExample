@@ -11,9 +11,9 @@ using Microsoft.Extensions.Logging;
 using Serilog;
 using Serilog.Events;
 using Serilog.Sinks.SystemConsole.Themes;
-using Zaac.WebClient.Services.Certificates;
+using Zaac.STSServer.Services.Certificates;
 
-namespace Zaac.WebClient
+namespace Zaac.STSServer
 {
     public class Program
     {
@@ -70,7 +70,7 @@ namespace Zaac.WebClient
                         options =>
                         {
                             options.AddServerHeader = false;
-                            options.Listen(IPAddress.Loopback, 5002, listenOptions =>
+                            options.Listen(IPAddress.Any, 5001, listenOptions =>
                             {
                                 listenOptions.UseHttps(Certificate.GetForKestrel());
                             });

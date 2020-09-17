@@ -9,7 +9,7 @@ using System;
 using System.Security.Claims;
 using System.Threading.Tasks;
 
-namespace WebClient.Controllers
+namespace Zaac.WebClient.Controllers
 {
     //[Authorize(AuthenticationSchemes = "oidc")]
     public class AccountController : Controller
